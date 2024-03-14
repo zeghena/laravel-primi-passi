@@ -13,6 +13,8 @@
 
 <hr>
 
+<h3>{{$class}}</h3>
+
 <ul>
         @foreach ( $students as $student )
 

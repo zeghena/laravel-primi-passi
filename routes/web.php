@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $title = 'Homepage';
     $paragraph = 'Welcome in Laravel Paradise';
+    $class = 'Classe #117';
 
     $students = [
         'Mattia',
@@ -30,7 +31,9 @@ Route::get('/', function () {
         'Davide',
     ];
 
-    return view('home', compact('title', 'paragraph', 'students'));
+    config()
+
+    return view('home', compact('title', 'paragraph', 'students','class'));
 
 
 });
