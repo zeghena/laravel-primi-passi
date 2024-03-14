@@ -15,6 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $title = 'Homepage';
-    return view('home', compact('title'));
+    $paragraph = 'Welcome in Laravel Paradise';
+
+    $students = [
+        'Mattia',
+        'Serena',
+        'Jonathan',
+        'Simone',
+        'Luca',
+        'Vincenzo',
+        'Sissy',
+        'Andrea',
+        'Nicola',
+        'Davide',
+    ];
+
+    return view('home', compact('title', 'paragraph', 'students'));
+
 
 });

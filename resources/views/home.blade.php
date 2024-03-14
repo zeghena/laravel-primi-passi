@@ -9,5 +9,18 @@
 
 <h1>{{ $title }}</h1>
 
+<h3>{{ $paragraph }}</h3>
+
+<hr>
+
+<ul>
+        @foreach ( $students as $student )
+
+    <li>{{$student}}</li>
+
+        @endforeach
+
+</ul>
+
 </body>
 </html>
